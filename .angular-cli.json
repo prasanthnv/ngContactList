@@ -19,7 +19,9 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "../node_modules/semantic-ui-css/semantic.css",
+        "../node_modules/lato-font/css/lato-font.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
