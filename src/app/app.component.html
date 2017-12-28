@@ -44,22 +44,22 @@
   </div>
 </div>
 <div class="form_wrapper">
-  <form #contactForm="ngForm" (submit)="onSubmit(contactForm)">
+  <form [formGroup]="contactForm" (submit)="onSubmit()">
     <h5>Name</h5>
     <div class="ui input focus fluid">
-      <input type="text" required name="name" ngModel placeholder="Name">
+      <input type="text" required formControlName="name"  placeholder="Name">
     </div>
     <h5>Mobile</h5>
     <div class="ui input focus fluid">
-      <input type="text" required name="mobile" ngModel placeholder="Mobile">
+      <input type="text" required formControlName="mobile"  placeholder="Mobile">
     </div>
     <h5>Telephone</h5>
     <div class="ui input focus fluid">
-      <input type="text" name="telephone" ngModel placeholder="Telephone">
+      <input type="text" formControlName="telephone"  placeholder="Telephone">
     </div>
     <h5>Address</h5>
     <div class="ui input focus fluid">
-      <input type="text" name="address" ngModel placeholder="Telephone">
+      <input type="text" formControlName="address"  placeholder="Telephone">
     </div>
 <hr>
     <button type="submit" [disabled]="!contactForm.valid" class="ui button blue fluid">Save</button>
